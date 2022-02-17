@@ -9,7 +9,7 @@ export default function WelcomeScreen() {
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-        <Text>Sell What you want</Text>
+        <Text style={styles.titleText}>Sell What you want</Text>
       </View>
       <View style={styles.loginButton}>
         <Text style={styles.textButton}>Login</Text>
@@ -32,6 +32,10 @@ const styles = StyleSheet.create({
     height: 100,
     margin: 16,
   },
+  titleText: {
+    // fontWeight: "bold",
+    fontSize: 32,
+  },
   logoContainer: {
     position: "absolute",
     top: 70,
@@ -53,11 +57,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#4ecdc4",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 12,
+    margin: 12,
     borderRadius: 12,
   },
   textButton: {
     color: "white",
+    fontWeight: "bold",
+
     // textAlign: "center",
   },
 });
