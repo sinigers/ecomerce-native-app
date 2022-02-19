@@ -10,6 +10,13 @@ export default function ListingDetailsScreen() {
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>Rec jacket for sale</AppText>
         <AppText style={styles.price}>$300</AppText>
+        <View style={styles.userContainer}>
+          <ListItem
+            image={require("../assets/siniger.jpg")}
+            title="Alexander Sinigerov"
+            subTitle="3 Listings"
+          />
+        </View>
       </View>
     </View>
   );
@@ -32,5 +39,8 @@ const styles = StyleSheet.create({
   Image: {
     width: "100%",
     height: 300,
+  },
+  userContainer: {
+    marginVerical: 40,
   },
 });
