@@ -3,6 +3,7 @@ import React from "react";
 
 import ListItem from "../components/ListItem";
 import Screen from "../components/Screen";
+import ListItemSeparatior from "../components/ListItemSeparatior";
 
 const messages = [
   {
@@ -32,6 +33,7 @@ export default function MessagesScreen() {
             image={item.image}
           />
         )}
+        ItemSeparatorComponent={ListItemSeparatior}
       />
     </Screen>
   );
