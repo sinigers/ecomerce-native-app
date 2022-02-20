@@ -15,7 +15,11 @@ export default function App() {
     //   image={require("./app/assets/jacket.jpg")}
     // />
     <Screen>
-      <Icon name="email" size={48} backgroundColor="red" iconColor="white" />
+      <ListItem
+        title="My title"
+        subTitle="My subtitle"
+        ImageComponent={<Icon name="email" />}
+      />
     </Screen>
   );
 }
