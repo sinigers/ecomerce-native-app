@@ -5,14 +5,18 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 import AppText from "./app/components/AppText";
 import Card from "./app/components/Card";
+import Icon from "./app/components/Icon";
 
 export default function App() {
   return (
-    <Card
-      title="Product name"
-      subTitle="399"
-      image={require("./app/assets/jacket.jpg")}
-    />
+    // <Card
+    //   title="Product name"
+    //   subTitle="399"
+    //   image={require("./app/assets/jacket.jpg")}
+    // />
+    <Screen>
+      <Icon name="email" size={48} backgroundColor="red" iconColor="white" />
+    </Screen>
   );
 }
 
