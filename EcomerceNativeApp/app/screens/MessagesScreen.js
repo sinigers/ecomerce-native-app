@@ -5,7 +5,6 @@ import ListItem from "../components/ListItem";
 import Screen from "../components/Screen";
 import ListItemSeparatior from "../components/ListItemSeparatior";
 import ListItemDelete from "../components/ListItemDelete";
-import { useState } from "react";
 
 const initialMessages = [
   {
