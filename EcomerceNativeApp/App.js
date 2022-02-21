@@ -6,20 +6,12 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 import AppText from "./app/components/AppText";
 import Card from "./app/components/Card";
 import Icon from "./app/components/Icon";
+import Screen from "./app/components/Screen";
 
 export default function App() {
   return (
-    // <Card
-    //   title="Product name"
-    //   subTitle="399"
-    //   image={require("./app/assets/jacket.jpg")}
-    // />
     <Screen>
-      <ListItem
-        title="My title"
-        subTitle="My subtitle"
-        ImageComponent={<Icon name="email" />}
-      />
+      <ViewImageScreen />
     </Screen>
   );
 }
