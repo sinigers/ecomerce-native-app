@@ -40,13 +40,13 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: colors.white,
   },
-  detailsContaine: {
+  detailsContainer: {
     marginLeft: 10,
     justifyContent: "center",
   },
   image: {
-    width: 70,
-    height: 70,
+    width: 56,
+    height: 56,
     borderRadius: 35,
   },
   title: {
