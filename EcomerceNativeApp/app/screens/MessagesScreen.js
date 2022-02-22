@@ -54,11 +54,10 @@ export default function MessagesScreen() {
             )}
           />
         )}
-        // ItemSeparatorComponent={ListItemSeparatior}
-
-        ItemSeparatorComponent={() => (
-          <View style={{ width: "100%", height: 1, backgroundColor: "red" }} />
-        )}
+        ItemSeparatorComponent={ListItemSeparator}
+        // ItemSeparatorComponent={() => (
+        //   <View style={{ width: "100%", height: 1, backgroundColor: "red" }} />
+        // )}
         refreshing={refreshing}
         onRefresh={() => {
           setMessages([

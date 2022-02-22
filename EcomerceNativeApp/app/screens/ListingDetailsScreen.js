@@ -27,6 +27,7 @@ export default function ListingDetailsScreen() {
 const styles = StyleSheet.create({
   detailsContainer: {
     padding: 20,
+    marginLeft: 8,
   },
   price: {
     color: colors.secondary,

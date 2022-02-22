@@ -3,7 +3,7 @@ import React from "react";
 import colors from "../config/colors";
 
 export default function ListItemSeparatior() {
-  return <View style={(styles, separator)}></View>;
+  return <View style={styles.separator}></View>;
 }
 
 const styles = StyleSheet.create({

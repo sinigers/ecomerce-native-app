@@ -10,6 +10,7 @@ import Card from "./app/components/Card";
 import ListItem from "./app/components/ListItem";
 import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
+import AccountScreen from "./app/screens/AccountScreen";
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ export default function App() {
         subTitle="300"
         image={require("./app/assets/jacket.jpg")}
       /> */}
-      <ListingDetailsScreen />
+      <AccountScreen />
     </Screen>
   );
 }
