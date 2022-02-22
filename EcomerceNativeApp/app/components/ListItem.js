@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
   },
   title: {
-    fontWeight: 500,
+    fontWeight: "500",
   },
   subTitle: {
     color: colors.medium,
