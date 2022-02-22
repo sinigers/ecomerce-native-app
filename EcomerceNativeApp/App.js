@@ -1,19 +1,25 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 
 import AppText from "./app/components/AppText";
 import Card from "./app/components/Card";
+import ListItem from "./app/components/ListItem";
 import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
 
 export default function App() {
   return (
     <Screen>
-      <WelcomeScreen />
+      {/* <Card
+        title="red black mlka"
+        subTitle="300"
+        image={require("./app/assets/jacket.jpg")}
+      /> */}
+      <ListingDetailsScreen />
     </Screen>
   );
 }

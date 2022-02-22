@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import ListItem from "../components/ListItem";
 import Screen from "../components/Screen";
-import ListItemSeparatior from "../components/ListItemSeparatior";
+import ListItemSeparator from "../components/ListItemSeparator";
 import ListItemDelete from "../components/ListItemDelete";
 
 const initialMessages = [
@@ -17,6 +17,12 @@ const initialMessages = [
     id: 2,
     title: "T2",
     description: "D2",
+    image: require("../assets/siniger.jpg"),
+  },
+  {
+    id: 3,
+    title: "T3",
+    description: "D3",
     image: require("../assets/siniger.jpg"),
   },
 ];
@@ -48,7 +54,11 @@ export default function MessagesScreen() {
             )}
           />
         )}
-        ItemSeparatorComponent={ListItemSeparatior}
+        // ItemSeparatorComponent={ListItemSeparatior}
+
+        ItemSeparatorComponent={() => (
+          <View style={{ width: "100%", height: 1, backgroundColor: "red" }} />
+        )}
         refreshing={refreshing}
         onRefresh={() => {
           setMessages([
