@@ -21,7 +21,7 @@ export default function App() {
         subTitle="300"
         image={require("./app/assets/jacket.jpg")}
       /> */}
-      <ListingsScreen />
+      <AccountScreen />
     </Screen>
   );
 }

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import React from "react";
 import colors from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -11,7 +11,7 @@ export default function Icon({
 }) {
   return (
     <View
-      syle={{
+      style={{
         width: size,
         height: size,
         borderRadius: size / 2,
