@@ -12,6 +12,7 @@ import ListItem from "./app/components/ListItem";
 import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
 import AccountScreen from "./app/screens/AccountScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         subTitle="300"
         image={require("./app/assets/jacket.jpg")}
       /> */}
-      <AccountScreen />
+      <AppTextInput placeholder="Username" icon="email" />
     </Screen>
   );
 }
