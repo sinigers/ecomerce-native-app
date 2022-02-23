@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Switch } from "react-native";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
@@ -13,8 +13,12 @@ import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
 import AccountScreen from "./app/screens/AccountScreen";
 import AppTextInput from "./app/components/AppTextInput";
+import { useState } from "react";
+import AppPicker from "./app/components/AppPicker";
 
 export default function App() {
+  const [isNew, setIsNew] = useState(false);
+
   return (
     <Screen>
       {/* <Card
@@ -22,7 +26,8 @@ export default function App() {
         subTitle="300"
         image={require("./app/assets/jacket.jpg")}
       /> */}
-      <AppTextInput placeholder="Username" icon="email" />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="email" />
     </Screen>
   );
 }
