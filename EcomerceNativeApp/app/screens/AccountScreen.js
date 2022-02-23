@@ -12,9 +12,11 @@ const menuItems = [
   {
     title: "My listings",
     icon: {
-      name: "format-list-bullet",
+      name: "format-list-bulleted",
       backgroundColor: colors.primary,
     },
+  },
+  {
     title: "My messages",
     icon: {
       name: "email",
